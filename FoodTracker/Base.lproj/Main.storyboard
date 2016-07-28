@@ -42,6 +42,7 @@
                                     <outlet property="nameLabel" destination="fom-xT-rxX" id="WcL-D5-JUn"/>
                                     <outlet property="photoImageView" destination="rDu-Sn-yBd" id="iOU-1H-YAq"/>
                                     <outlet property="ratingControl" destination="z2u-fG-n31" id="hx5-nf-Lm6"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="B0m-IT-X4e"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -160,6 +161,7 @@
         <!--Navigation Controller-->
         <scene sceneID="MVH-mq-05h">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1Z-zg-bNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ilY-fi-kL2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zsb-y5-Iz2">
@@ -171,12 +173,14 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RNF-eT-7JW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g1Z-zg-bNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="108"/>
+            <point key="canvasLocation" x="1020" y="457"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="320" height="320"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="B0m-IT-X4e"/>
+    </inferredMetricsTieBreakers>
 </document>
